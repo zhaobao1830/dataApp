@@ -46,7 +46,9 @@ button {
 
 html,
 body {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: 100%; }
 
 img {
   padding: 0px;
@@ -161,7 +163,8 @@ img {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  margin-top: -1.17333rem; }
 
 .commonBottom {
   height: 1.30667rem;
@@ -202,10 +205,15 @@ img {
 .commonBottom ul li a img {
   width: 0.58667rem; }
 
-.serviceBody, .myBody {
+.serviceBody, .myBody, .noticeShowBody, .homeBody {
   background-color: #f3f5f7; }
 
-.serviceContainer, .myContainer {
+.noticeBody {
+  background: linear-gradient(top, #f3f5f7, #dedede);
+  background: -webkit-linear-gradient(top, #f3f5f7, #dedede);
+  background: -moz-linear-gradient(top, #f3f5f7, #dedede); }
+
+.serviceContainer, .myContainer, .noticeContainer, .noticeShowContainer, .homeContainer {
   position: relative;
   left: 0;
   top: 0;
@@ -214,7 +222,11 @@ img {
   width: 100%;
   min-height: 100%; }
 
-.serviceTop, .myTop {
+.servieCon, .myCon, .noticeCon, .noticeShowCon, .homeShowCon {
+  padding-bottom: 1.17333rem;
+  overflow: hidden; }
+
+.serviceTop, .myTop, .noticeShowTop {
   width: 100%;
   height: 1.17333rem;
   line-height: 1.17333rem;
@@ -269,8 +281,234 @@ img {
   background-size: 0.14667rem auto;
   margin-left: auto; }
 
+.noticeLeft {
+  width: 2.4rem;
+  height: auto;
+  float: left;
+  margin-top: 0.4rem; }
+
+.noticeLeft p {
+  width: 2.4rem;
+  height: 70px;
+  text-align: center;
+  color: #0062b2;
+  font-size: 0.34667rem; }
+
+.noticeLeft ul {
+  overflow: hidden;
+  background-color: #ffffff; }
+
+.noticeLeft ul li {
+  width: 2.4rem;
+  height: 1.33333rem;
+  line-height: 1.33333rem;
+  text-align: center;
+  font-size: 0.32rem;
+  float: left;
+  border-top: 1px solid #dcdcdc; }
+
+.noticeLeft ul li:first-child {
+  border-top: none; }
+
+.noticeRight {
+  width: 7.06667rem;
+  height: auto;
+  float: left;
+  margin-left: 0.26667rem;
+  margin-top: 0.4rem; }
+
+.nrImg, .nrImg img {
+  width: 7.06667rem;
+  height: 2.4rem; }
+
+.nrList {
+  width: 7.06667rem;
+  height: auto;
+  margin-top: 0.26667rem; }
+
+.nrList ul {
+  overflow: auto;
+  margin-top: 0.4rem;
+  background-color: #ffffff; }
+
+.nrList ul li {
+  float: left;
+  width: 100%;
+  height: 0.77333rem;
+  line-height: 0.77333rem;
+  border-top: 1px solid #dcdcdc; }
+
+.nrList ul li:first-child {
+  border-top: none; }
+
+.nrList ul li p, .nrList ul li span {
+  display: block;
+  float: left; }
+
+.nrList ul li p {
+  font-size: 0.26667rem;
+  color: #313131;
+  margin-left: 0.26667rem;
+  width: 4.66667rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.nrList ul li span {
+  margin-left: 0.4rem;
+  font-size: 0.24rem;
+  color: #8a8a8a; }
+
+.noticeShowTop i {
+  width: 0.22667rem;
+  height: 0.42667rem;
+  float: left;
+  background-image: url("../../image/noticeShow-01.png");
+  background-repeat: no-repeat;
+  background-size: 0.22667rem auto;
+  margin-top: 0.37333rem;
+  margin-left: 0.4rem; }
+
+.noticeShowTop p {
+  width: 8.02667rem;
+  text-align: center;
+  font-size: 0.58667rem;
+  color: #ffffff;
+  float: left;
+  line-height: 1.17333rem !important; }
+
+.noticeShowTop span {
+  display: block;
+  float: left;
+  height: 0.34667rem;
+  line-height: 0.34667rem !important;
+  margin-top: 0.58667rem;
+  font-size: 0.32rem;
+  color: #ffffff; }
+
+.noticeShowCo {
+  width: 100%;
+  height: auto;
+  margin-top: 0.26667rem;
+  background-color: #ffffff; }
+
+.nsc-title {
+  width: 8.24rem;
+  margin: 0 auto;
+  font-size: 0.37333rem;
+  color: #313131;
+  font-weight: bold; }
+
+.nsc-c {
+  width: 8.24rem;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 0.37333rem; }
+
+.nsc-c p {
+  width: auto;
+  min-width: 1.33333rem !important; }
+
+.nsc-c span {
+  width: auto;
+  max-width: 6.66667rem; }
+
+.nsc-c p, .nsc-c span {
+  font-size: 0.26667rem;
+  color: #8a8a8a;
+  display: block;
+  float: left; }
+
+.adv, .adv img {
+  width: 10.01333rem;
+  height: 4.26667rem; }
+
+.homeNav {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+
+.homeNav ul {
+  width: 9.29333rem;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.homeNav ul li {
+  float: left;
+  margin-left: 0.8rem;
+  margin-top: 0.26667rem; }
+
+.homeNav ul li:first-child {
+  margin-left: 0.18667rem; }
+
+.homeNav ul li img {
+  width: 1.14667rem; }
+
+.homeList {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-top: 0.26667rem;
+  margin-bottom: 0.26667rem; }
+
+.homeList ul {
+  width: 9.29333rem;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.homeList ul li {
+  float: left;
+  height: 0.74667rem;
+  line-height: 0.74667rem; }
+
+.homeList ul li span {
+  display: block;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.con {
+  width: 4.26667rem;
+  font-size: 0.26667rem;
+  color: #313131; }
+
+.company {
+  width: 3.56rem;
+  color: #8a8a8a;
+  font-size: 0.24rem;
+  margin-left: 0.34667rem; }
+
+.date {
+  width: 0.73333rem;
+  color: #8a8a8a;
+  font-size: 0.24rem;
+  margin-left: 0.34667rem; }
+
 .marginB30 {
-  margin-bottom: 0.4rem; }
+  margin-bottom: 0.4rem;
+  margin-left: 0.37333rem; }
 
 .marginB20 {
   margin-bottom: 0.26667rem; }
+
+.marginL0 {
+  margin-left: 0.01333rem !important; }
+
+.marginL50 {
+  margin-left: 0.66667rem !important; }
+
+.marginL29 {
+  margin-left: 0.38667rem !important; }
+
+.marginL27 {
+  margin-left: 0.36rem !important; }
+
+.imgW108 {
+  width: 1.44rem !important; }
+
+.imgW153 {
+  width: 2.04rem !important; }

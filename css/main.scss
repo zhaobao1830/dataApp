@@ -240,11 +240,16 @@ img{
 }
 //bottom样式 end
 
-//服务页面样式,我的页面样式 start
-.serviceBody,.myBody{
+//服务页面样式,我的页面样式,公告页面样式,首页页面样式 start
+.serviceBody,.myBody,.noticeShowBody,.homeBody{
 	background-color: #f3f5f7;
 }
-.serviceContainer,.myContainer{
+.noticeBody{
+	background:linear-gradient(top,#f3f5f7,#dedede);
+	background:-webkit-linear-gradient(top,#f3f5f7,#dedede);
+	background:-moz-linear-gradient(top,#f3f5f7,#dedede);
+}
+.serviceContainer,.myContainer,.noticeContainer,.noticeShowContainer,.homeContainer{
 	position: relative;
 	left: 0;
 	top: 0;
@@ -253,10 +258,11 @@ img{
 	width: 100%;
 	min-height: 100%;
 }
-.servieCon,.myCon{
+.servieCon,.myCon,.noticeCon,.noticeShowCon,.homeShowCon{
 	padding-bottom: ptor(88px);
+	overflow: hidden;
 }
-.serviceTop,.myTop{
+.serviceTop,.myTop,.noticeShowTop{
 	width: 100%;
 	height: ptor(88px);
 	line-height: ptor(88px);
@@ -311,14 +317,241 @@ img{
 	background-size: ptor(11px) auto;
 	margin-left: auto
 }
-//服务页面样式,我的页面样式 end
-
-
+.noticeLeft{
+	width: ptor(180px);
+	height: auto;
+	float: left;
+	margin-top: ptor(30px);
+}
+.noticeLeft p{
+	width: ptor(180px);
+    height: 70px;
+	text-align: center;
+	color: #0062b2;
+	font-size: ptor(26px);
+}
+.noticeLeft ul{
+	overflow: hidden;
+	background-color: #ffffff;
+}
+.noticeLeft ul li{
+    width: ptor(180px);
+	height: ptor(100px);
+	line-height: ptor(100px);
+	text-align: center;
+	font-size: ptor(24px);
+	float: left;
+	border-top: 1px solid #dcdcdc;
+}
+.noticeLeft ul li:first-child{
+	border-top: none;
+}
+.noticeRight{
+	width: ptor(530px);
+	height: auto;
+	float: left;
+	margin-left: ptor(20px);
+	margin-top: ptor(30px);
+}
+.nrImg,.nrImg img{
+	width: ptor(530px);
+	height: ptor(180px);
+}
+.nrList{
+	width: ptor(530px);
+	height: auto;
+	margin-top: ptor(20px);
+}
+.nrList ul{
+	overflow: auto;
+	margin-top: ptor(30px);
+	background-color: #ffffff;
+}
+.nrList ul li{
+	float: left;
+	width: 100%;
+	height: ptor(58px);
+	line-height: ptor(58px);
+	border-top: 1px solid #dcdcdc;
+}
+.nrList ul li:first-child{
+	border-top: none;
+}
+.nrList ul li p,.nrList ul li span{
+	display: block;
+	float: left;
+}
+.nrList ul li p{
+	font-size: ptor(20px);
+	color: #313131;
+	margin-left: ptor(20px);
+	width: ptor(350px);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.nrList ul li span{
+	margin-left: ptor(30px);
+	font-size: ptor(18px);
+	color: #8a8a8a;
+}
+//服务页面样式,我的页面样式,公告页面样式,首页页面样式 end
+//公告展示页面样式 start
+.noticeShowTop i{
+	width: ptor(17px);
+	height: ptor(32px);
+	float: left;
+	background-image: url('#{$imgurl}noticeShow-01.png');
+	background-repeat: no-repeat;
+	background-size: ptor(17px) auto;
+	margin-top: ptor(28px);
+	margin-left: ptor(30px);
+}
+.noticeShowTop p{
+	width: ptor(602px);
+	text-align: center;
+	font-size: ptor(44px);
+	color: #ffffff;
+	float: left;
+	line-height: ptor(88px) !important;
+}
+.noticeShowTop span{
+	display: block;
+	float: left;
+	height: ptor(26px);
+	line-height: ptor(26px) !important;
+	margin-top: ptor(44px);
+	font-size: ptor(24px);
+	color: #ffffff;
+}
+.noticeShowCo{
+	width: 100%;
+	height: auto;
+	margin-top: ptor(20px);
+	background-color: #ffffff;
+}
+.nsc-title{
+	width: ptor(618px);
+	margin: 0 auto;
+    font-size: ptor(28px);
+	color: #313131;
+	font-weight: bold;
+}
+.nsc-c{
+	width: ptor(618px);
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: ptor(28px);
+}
+.nsc-c p{
+	width: auto;
+	min-width: ptor(100px) !important;
+}
+.nsc-c span{
+	width: auto;
+	max-width: ptor(500px);
+}
+.nsc-c p,.nsc-c span{
+	font-size: ptor(20px);
+	color: #8a8a8a;
+	display: block;
+	float: left;
+}
+//公告展示页面样式 end
+//首页页面样式 start
+.adv,.adv img{
+	width: ptor(751px);
+	height: ptor(320px);
+}
+.homeNav{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.homeNav ul{
+	width: ptor(697px);
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.homeNav ul li{
+	float: left;
+	margin-left: ptor(60px);
+	margin-top: ptor(20px);
+}
+.homeNav ul li:first-child{
+	margin-left: ptor(14px);
+}
+.homeNav ul li img{
+	width: ptor(86px);
+}
+.homeList{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-color: #ffffff;
+	margin-top: ptor(20px);
+	margin-bottom: ptor(20px);
+}
+.homeList ul{
+	width: ptor(697px);
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.homeList ul li{
+	float: left;
+	height: ptor(56px);
+	line-height: ptor(56px);
+}
+.homeList ul li span{
+	display: block;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.con{
+	width: ptor(320px);
+	font-size: ptor(20px);
+	color: #313131;
+}
+.company{
+	width: ptor(267px);
+	color: #8a8a8a;
+	font-size: ptor(18px);
+	margin-left: ptor(26px);
+}
+.date{
+	width: ptor(55px);
+	color: #8a8a8a;
+	font-size: ptor(18px);
+	margin-left: ptor(26px);
+}
+//首页页面样式 end
 .marginB30{
 	margin-bottom: ptor(30px);
+	margin-left: ptor(28px);
 }
 
 .marginB20{
 	margin-bottom: ptor(20px);
 }
-
+.marginL0{
+	margin-left: ptor(1px) !important;
+}
+.marginL50{
+	margin-left: ptor(50px) !important;
+}
+.marginL29{
+	margin-left: ptor(29px) !important;
+}
+.marginL27{
+	margin-left: ptor(27px) !important;
+}
+.imgW108{
+	width: ptor(108px) !important;
+}
+.imgW153{
+	width: ptor(153px) !important;
+}
