@@ -1,0 +1,433 @@
+﻿<!doctype html>
+<html>
+<head> 
+<meta charset="utf-8">
+<!--
+<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>芝麻东家</title>
+	<link href="./dist/css/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/fontSize.js"></script>
+    <script type="text/javascript" src="js/ZhiMaList.js"></script>
+</head>
+
+<body>
+	<div class="ZhiMaSearchHeader">
+		
+		<div class="ZhiMasearch">
+			<form>
+				<a href="history.go(-1)" class="back">
+					<i></i>
+				</a>
+				<a href="javascript:;" class="searchSub">搜索</a>
+				<div class="in">
+					<i></i>
+					<input type="text" name="search" />
+				</div>
+			</form>
+		</div>
+		<!-- 选项卡 TOP -->
+		<div class="toobarOuter">
+			<!-- 功能 TOP -->
+			<div class="chioceToolbar">
+				<i></i>
+				<ul class="toobarUl">
+					<li class="select">
+						<a href="javascript:;">
+							类型
+						</a>
+					</li>
+					<li id="state">
+						<a href="javascript:;">
+							状态
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							排序
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							行业
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 功能 BTM -->
+			<!-- 类型内容 TOP -->
+			<div class="stateCont classChioce">
+				<div class="stateList">
+					<ul class="stateUl">
+						<li class="select">
+							<a href="javascript:;">
+								类型全部
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								融资总额
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								上线日期
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								预期收益
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								关注
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 类型内容 BTM -->
+			<!-- 状态内容 TOP -->
+			<div class="stateCont stateChioce">
+				<div class="stateList">
+					<ul class="stateUl">
+						<li class="select">
+							<a href="javascript:;">
+								状态全部
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								融资总额
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								上线日期
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								预期收益
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								关注
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 状态内容 BTM -->
+			<!-- 排序内容 TOP -->
+			<div class="stateCont sortChioce">
+				<div class="stateList">
+					<ul class="stateUl">
+						<li class="select">
+							<a href="javascript:;">
+								排序全部
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								融资总额
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								上线日期
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								预期收益
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								关注
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 排序内容 BTM -->
+			<!-- 行业内容 TOP -->
+			<div class="stateCont tradeChioce">
+				<div class="stateList">
+					<ul class="stateUl">
+						<li class="select">
+							<a href="javascript:;">
+								行业全部
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								融资总额
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								上线日期
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								预期收益
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">
+								关注
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 行业内容 BTM -->
+		</div>
+		<!-- 选项卡 BTM -->
+	</div>
+	<!-- 内容 TOP -->
+	<div class="zhiMaContent">
+
+
+		<!-- 项目列表 TOP -->
+		<div class="productList">
+			<div class="productCont">
+				<a href="javascript:;" class="productLink">
+					<img src="./images/productImg.png">
+				</a>
+				<div class="productMsg">
+					<!-- 店铺地点 TOP -->
+					<div class="msgTitle">
+						<h2>
+						杨记谷田儿煎饼
+						</h2>
+						<span>
+						老北京印象中的美食记忆
+						</span>
+					</div>
+					<div class="proPosition">
+						<a href="javascript:;">
+							北京市
+							<i></i>
+						</a>
+						<span class="point">
+							老店分红，融资新店
+						</span>
+					</div>
+					<!-- 店铺地点 BTM -->
+					<!-- 投资进度 TOP -->
+					<!-- 百分比 设置perProgress的百分比宽度即可 -->
+					<div class="percent">
+						<div class="perLength">
+							<div class="perProgress">
+							</div>
+						</div>
+						<span>60%</span>
+					</div>
+					<!-- 投资进度 BTM -->
+					<!-- 投资收益 TOP -->
+					<div class="processds">
+						<div class="yearMoneyRate">
+							<strong>
+							18%
+							</strong>
+							<span>
+							年化收益
+							</span>
+						</div>
+						<div class="targetAmount">
+							<strong>
+							￥150万
+							</strong>
+							<span>
+							目标金额
+							</span>
+						</div>
+						<div class="startingAmount">
+							<strong>
+							￥1000
+							</strong>
+							<span>
+							起投金额
+							</span>
+						</div>
+					</div>
+					<!-- 投资收益 BTM -->
+					<div class="guarantee">
+						<div class="price">
+							<span>
+							担保金
+							</span>
+							<i></i>
+						</div>
+						<div class="mortgageStore">
+							<span>
+							目标金额
+							</span>
+							<i></i>
+						</div>
+						<div class="person">
+							<span>
+							担保人
+							</span>
+							<i></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="productCont marginT30">
+				<a href="javascript:;" class="productLink">
+					<img src="./images/productImg.png">
+				</a>
+				<div class="productMsg">
+					<!-- 店铺地点 TOP -->
+					<div class="msgTitle">
+						<h2>
+						杨记谷田儿煎饼
+						</h2>
+						<span>
+						老北京印象中的美食记忆
+						</span>
+					</div>
+					<div class="proPosition">
+						<a href="javascript:;">
+							北京市
+							<i></i>
+						</a>
+						<span class="point">
+							老店分红，融资新店
+						</span>
+					</div>
+					<!-- 店铺地点 BTM -->
+					<!-- 投资倒计时 TOP -->
+					<div class="investCountdown">
+						<span>融资倒计时：</span>
+						<em>44天 22小时 13分 22秒</em>
+					</div>
+					<!-- 投资倒计时 BTM -->
+					<!-- 投资收益 TOP -->
+					<div class="processds">
+						<div class="yearMoneyRate">
+							<strong>
+							18%
+							</strong>
+							<span>
+							年化收益
+							</span>
+						</div>
+						<div class="targetAmount">
+							<strong>
+							￥150万
+							</strong>
+							<span>
+							目标金额
+							</span>
+						</div>
+						<div class="startingAmount">
+							<strong>
+							￥1000
+							</strong>
+							<span>
+							起投金额
+							</span>
+						</div>
+					</div>
+					<!-- 投资收益 BTM -->
+					<div class="guarantee">
+						<div class="price">
+							<span>
+							担保金
+							</span>
+							<i></i>
+						</div>
+						<div class="mortgageStore">
+							<span>
+							目标金额
+							</span>
+							<i></i>
+						</div>
+						<div class="person">
+							<span>
+							担保人
+							</span>
+							<i></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 热门项目 BTM -->
+	</div>
+	<!-- 内容 BTM -->
+
+	<div class="zhiMaGetMore">
+		<a href="javascript:;" class="getMore">
+		展开更多
+		</a>
+		<a href="javascript:;" class="loading">
+			<div></div>
+			<div></div>
+			<div></div>
+		</a>
+	</div>
+
+	<!-- 底部 TOP -->
+	<div class="zhiMaPageFooter">
+		<div class="footerTitle">
+		投资靠谱的产品收益型项目
+		</div>
+		<div class="footerIntroduce">
+		芝麻东家为投资人提供优质精益的项目，并为投资人提供专业
+的融后管理服务。
+		</div>
+		<div class="register">
+		注册
+		</div>
+	</div>
+	<!-- 底部 BTM -->
+	<div class="zhiMafooterBar">
+		<ul>
+			<li class="home select">
+				<a href="javascript:;">
+					<i></i>
+					<span>
+					首页
+					</span>
+				</a>
+			</li>
+			<li class="guide">
+				<a href="javascript:;">
+					<i></i>
+					<span>
+					指南
+					</span>
+				</a>
+			</li>
+			<li class="mine">
+				<a href="javascript:;">
+					<i></i>
+					<span>
+					我
+					</span>
+				</a>
+			</li>
+			<li class="more">
+				<a href="javascript:;">
+					<i></i>
+					<span>
+					更多
+					</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

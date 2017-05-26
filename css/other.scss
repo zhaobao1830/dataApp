@@ -1,0 +1,118 @@
+
+//计算rem
+$rem:75px;//(750/10)
+//px换算rem
+@function pxTorem($px){
+	@return $px / $rem * 1rem;
+}
+//背景图和图片路径--可改为绝对路径
+$zhima:'../../images/';
+//记录最小font-size
+$fontSize: 12px;
+//滚动图个数
+$sliderLength:4;
+
+//设置公共的清除浮动方法
+@mixin beforeAfter(){
+	&:before,
+	&:after{
+		content:"";
+		display: block;
+	};
+	&:after{
+		clear:both;
+	}
+}
+
+.zhiMafooterBar{
+	width: 100%;
+	border-top: pxTorem(1px) #e7e7e7 solid;
+	border-bottom: pxTorem(1px) #e7e7e7 solid;
+	bottom: 0px;
+	left: 0px;
+	position: fixed;
+	background-color: #fcfcfc;
+	z-index: 9;
+	ul{
+		@include beforeAfter;
+	}
+	li{
+		width: 25%;
+		text-align: center;
+		float: left;
+	}
+	a{
+		display: block;
+		padding-top: pxTorem(17px);
+	}
+	i{
+		height: pxTorem(42px);
+		display: block;
+		margin: 0 auto;
+		background-image:url('#{$zhima}positionImg.png');
+		background-repeat:no-repeat;
+		background-size: pxTorem(300px) auto;
+	}
+	span{
+		font-size: pxTorem(20px);
+		height:pxTorem(24px);
+		line-height:pxTorem(24px);
+		color: #9e9e9e;
+		display: block;
+		margin: 0 auto;
+		margin-top:pxTorem(5px);
+	}
+	.home{
+		i{
+			width: pxTorem(40px);
+			background-position:(-(pxTorem(130px))) (-(pxTorem(116px)));
+		}
+	}
+	.guide{
+		i{
+			width: pxTorem(42px);
+			background-position:0 (-(pxTorem(156px)));
+		}
+	}
+	.mine{
+		i{
+			width: pxTorem(42px);
+			background-position:0 (-(pxTorem(214px)));
+		}
+	}
+	.more{
+		i{
+			width: pxTorem(45px);
+			background-position:0 (-(pxTorem(255px)));
+		}
+	}
+	.select{
+		span{
+			color: #ff6162;
+		}
+		&.home{
+			i{
+				background-position:0 (-(pxTorem(99px)));
+			}
+		}
+		&.guide{
+			i{
+				background-position:(-(pxTorem(63px))) (-(pxTorem(155px)));
+			}
+		}
+		&.mine{
+			i{
+				background-position:(-(pxTorem(63px))) (-(pxTorem(214px)));
+			}
+		}
+		&.more{
+			i{		
+				background-position:(-(pxTorem(63px))) (-(pxTorem(255px)));
+			}
+		}
+	}
+}
+
+
+
+

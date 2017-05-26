@@ -1,0 +1,318 @@
+
+//计算rem
+$rem:75px;//(750/10)
+//px换算rem
+@function ptor($px){
+	@return $px / $rem * 1rem;
+}
+//背景图和图片路径--可改为绝对路径
+$imgurl:'../../image/';
+//记录最小font-size
+$fontSize: 12px;
+//滚动图个数
+$sliderLength:4;
+
+html{
+	min-height: 100%;
+}
+body{
+    font-size: pxTorem($fontSize);
+    min-height:100%;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dd {
+  min-width: 320px;
+  margin: 0;
+  padding: 0px;
+  font-size:$fontSize;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Microsoft YaHei",Helvetica;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+em{
+	font-style: normal;
+}
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /*
+  -webkit-appearance: none;
+  */
+  outline: none;
+}
+html,
+body {
+  position: relative;
+}
+img{
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+//设置公共的清除浮动方法
+@mixin beforeAfter(){
+	&:before,
+	&:after{
+		content:"";
+		display: block;
+	};
+	&:after{
+		clear:both;
+	}
+}
+.bgGrayColor{
+	background-color:#f3f5f7;
+}
+.indexLogin{
+	width: ptor(655px);
+	margin: 0 auto;
+	padding-top: ptor(200px);
+	border-radius: ptor(8px);
+}
+.indexLogin .logo{
+
+}
+.indexLogin .logo img{
+	width: ptor(430px);
+	margin: 0 auto;
+}
+.indexLogin .loginForm{
+	margin-top: ptor(100px);
+}
+.indexLogin .loginLine{
+	height: ptor(52px);
+	line-height: ptor(52px);
+	padding: ptor(23px) ptor(30px) ;
+	background-color: #fff;
+	font-size: ptor(24px);
+	line-height: ptor(44px);
+	border-radius: ptor(8px);
+	color: #313131;
+}
+.indexLogin .loginLine input{
+	border: none;
+	outline: none;
+	font-size: ptor(24px);
+}
+.indexLogin .loginLine i{
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	width: ptor(44px);
+	height: ptor(44px);
+	background-image: url('#{$imgurl}appBG.png');
+	background-repeat: no-repeat;
+	background-size: ptor(300px) auto;
+}
+.indexLogin .loginLine span{
+	position: relative;
+	height: ptor(44px);
+	line-height: ptor(44px);
+	width: ptor(80px);
+	padding-left: ptor(60px);
+	display: inline-block;
+}
+.indexLogin .loginLine.inCheck span{
+	width: ptor(120px);
+}
+.indexLogin .loginLine.inUser input,.indexLogin .loginLine.inPass input{
+	width: ptor(405px);
+}
+.indexLogin .loginLine.inCheck input{
+	width: ptor(150px);
+}
+.indexLogin .loginLine .getCheckNum{
+	float: right;
+}
+.indexLogin .loginLine.inUser i{
+	background-position: ptor(0px) ptor(-55px);
+}
+.indexLogin .loginLine.inPass i{
+	background-position: ptor(0px) ptor(-0px);
+	
+}
+.indexLogin .loginLine.inCheck i{
+	background-position: ptor(0px) ptor(-111px);
+	
+}
+.indexLogin .getCheckNum em{
+	height: ptor(52px);
+}
+.indexLogin .getCheckNum a{
+	margin-left: ptor(15px);
+	color: #0062b2;
+}
+.indexLogin .inRecord{
+
+	font-size: ptor(24px);
+	height: ptor(30px);
+	line-height: ptor(30px);
+	margin-bottom: ptor(200px);
+}
+.indexLogin .inRecord input{
+	width: ptor(28px);
+	height: ptor(28px);
+	line-height: ptor(28px);
+	border-radius: ptor(4px);
+	border:ptor(1px) #707070 solid;
+	vertical-align: top;
+	margin: 0;
+	background-color: white;
+}
+.indexLogin .inSub input{
+	height: ptor(98px);
+	line-height: ptor(98px);
+	width: 100%;
+	background: url('#{$imgurl}loginSub.png') 0 0 repeat;
+	background-size: ptor(656px) auto;
+	border: 0;
+	color: white;
+	font-size: ptor(32px);
+	border-radius: ptor(8px);
+} 
+
+//bottom样式 start
+.comBottom{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #ffffff;
+}
+.commonBottom{
+    height: ptor(98px);
+	width: ptor(695px);
+	margin: 0 auto;
+}
+.comBonLogo{
+	height: ptor(98px);
+	line-height: ptor(98px);
+	display: flex;
+	justify-content:center;
+	align-items:Center;
+	float: left;
+	margin-left: ptor(3px);
+}
+.commonBottom img{
+	width: ptor(80px);
+}
+.commonBottom ul{
+	float: left;
+}
+.commonBottom ul li{
+	width: ptor(44px);
+	text-align: center;
+	height: ptor(98px);
+	float: left;
+	margin-left: ptor(107px);
+}
+.commonBottom ul li:first-child{
+	margin-left: ptor(88px) !important;
+}
+.commonBottom ul li a{
+	display: block;
+	overflow: hidden;
+	bottom: ptor(14px);
+	position: absolute;
+}
+.commonBottom ul li a img{
+	width: ptor(44px);
+}
+//bottom样式 end
+
+//服务页面样式,我的页面样式 start
+.serviceBody,.myBody{
+	background-color: #f3f5f7;
+}
+.serviceContainer,.myContainer{
+	position: relative;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	min-height: 100%;
+}
+.serviceTop,.myTop{
+	width: 100%;
+	height: ptor(88px);
+	line-height: ptor(88px);
+	font-size: ptor(44px);
+	text-align: center;
+	color: #ffffff;
+	background:linear-gradient(left,#5db6ff,#0062b2);
+	background:-webkit-linear-gradient(left,#5db6ff,#0062b2);
+	background:-moz-linear-gradient(left,#5db6ff,#0062b2);
+}
+.serviceContent,.myContent{
+	width: 100%;
+	background-color: #ffffff;
+	margin-top: ptor(20px);
+}
+.serviceContent ul,.myContent ul{
+	width: ptor(693px);
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.serviceContent ul li,.myContent ul li{
+	width: ptor(693px);
+	height: ptor(90px);
+	border-top: 1px solid #dcdcdc;
+	display: flex;
+	align-items:Center;
+	position: relative;
+}
+.serviceContent ul li:first-child,.myContent ul li:first-child{
+	border-top: none;
+}
+.serviceContent ul li img,.serviceContent ul li p,.serviceContent ul li i,.myContent ul li img,.myContent ul li p,.myContent ul li i{
+	display: block;
+}
+.serviceContent ul li img,.serviceContent ul li p,.myContent ul li img,.myContent ul li p{
+	float: left;
+}
+.serviceContent ul li img,.myContent ul li img{
+	width: ptor(42px);
+}
+.serviceContent ul li p,.myContent ul li p{
+	font-size: ptor(26px);
+	margin-left: ptor(20px);
+}
+.serviceContent ul li i,.myContent ul li i{
+	width: ptor(11px);
+	height: ptor(18px);
+	float: right;
+	background-image: url('#{$imgurl}service-03.png');
+	background-repeat: no-repeat;
+	background-size: ptor(11px) auto;
+	margin-left: auto
+}
+//服务页面样式,我的页面样式 end
+
+
+.marginB30{
+	margin-bottom: ptor(30px);
+}
+
+.marginB20{
+	margin-bottom: ptor(20px);
+}
+
