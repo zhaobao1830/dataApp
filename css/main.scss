@@ -13,9 +13,11 @@ $fontSize: 12px;
 $sliderLength:4;
 
 html{
+	min-width: 320px;
 	min-height: 100%;
 }
 body{
+	min-width: 320px;
     font-size: pxTorem($fontSize);
     min-height:100%;
 }
@@ -30,7 +32,6 @@ h6,
 p,
 dl,
 dd {
-  min-width: 320px;
   margin: 0;
   padding: 0px;
   font-size:$fontSize;
@@ -287,10 +288,8 @@ img{
 .serviceContent ul li,.myContent ul li{
 	width: ptor(693px);
 	height: ptor(90px);
+	line-height: ptor(90px);
 	border-top: 1px solid #dcdcdc;
-	display: flex;
-	align-items:Center;
-	position: relative;
 }
 .serviceContent ul li:first-child,.myContent ul li:first-child{
 	border-top: none;
@@ -304,9 +303,14 @@ img{
 .serviceContent ul li img,.myContent ul li img{
 	width: ptor(42px);
 }
-.serviceContent ul li p,.myContent ul li p{
+.serviceContent ul li a,.myContent ul li a{
+	display: flex;
+	align-items:Center;
+}
+.serviceContent ul li a p,.myContent ul li a p{
 	font-size: ptor(26px);
 	margin-left: ptor(20px);
+	color: #313131;
 }
 .serviceContent ul li i,.myContent ul li i{
 	width: ptor(11px);
@@ -324,8 +328,8 @@ img{
 	margin-top: ptor(30px);
 }
 .noticeLeft p{
-	width: ptor(180px);
-    height: 70px;
+	width: ptor(180px) !important;
+    height: ptor(70px);
 	text-align: center;
 	color: #0062b2;
 	font-size: ptor(26px);
@@ -467,23 +471,35 @@ img{
 	width: 100%;
 	height: auto;
 	overflow: hidden;
+	background-color: #ffffff;
+	padding-bottom: ptor(20px);
 }
 .homeNav ul{
 	width: ptor(697px);
 	height: auto;
 	overflow: hidden;
 	margin: 0 auto;
+	display: flex;
 }
 .homeNav ul li{
-	float: left;
-	margin-left: ptor(60px);
+	flex: 1;
+	width: ptor(150px);
+	text-align: center;
 	margin-top: ptor(20px);
 }
-.homeNav ul li:first-child{
-	margin-left: ptor(14px);
+.homeNav ul li a{
+	display: block;
+	text-align: center;
 }
 .homeNav ul li img{
 	width: ptor(86px);
+	display: inline !important;
+}
+.homeNav ul li a span{
+	margin-top: ptor(10px);
+	color: #313131;
+	display: block;
+	font-size: ptor(22px);
 }
 .homeList{
 	width: 100%;
@@ -513,19 +529,19 @@ img{
 }
 .con{
 	width: ptor(320px);
-	font-size: ptor(20px);
+	font-size: ptor(22px);
 	color: #313131;
 }
 .company{
 	width: ptor(267px);
 	color: #8a8a8a;
-	font-size: ptor(18px);
+	font-size: ptor(20px);
 	margin-left: ptor(26px);
 }
 .date{
 	width: ptor(55px);
 	color: #8a8a8a;
-	font-size: ptor(18px);
+	font-size: ptor(20px);
 	margin-left: ptor(26px);
 }
 //首页页面样式 end
@@ -548,10 +564,4 @@ img{
 }
 .marginL27{
 	margin-left: ptor(27px) !important;
-}
-.imgW108{
-	width: ptor(108px) !important;
-}
-.imgW153{
-	width: ptor(153px) !important;
 }

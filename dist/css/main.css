@@ -1,7 +1,9 @@
 html {
+  min-width: 320px;
   min-height: 100%; }
 
 body {
+  min-width: 320px;
   font-size: pxTorem(12px);
   min-height: 100%; }
 
@@ -16,7 +18,6 @@ h6,
 p,
 dl,
 dd {
-  min-width: 320px;
   margin: 0;
   padding: 0px;
   font-size: 12px;
@@ -251,10 +252,8 @@ img {
 .serviceContent ul li, .myContent ul li {
   width: 9.24rem;
   height: 1.2rem;
-  border-top: 1px solid #dcdcdc;
-  display: flex;
-  align-items: Center;
-  position: relative; }
+  line-height: 1.2rem;
+  border-top: 1px solid #dcdcdc; }
 
 .serviceContent ul li:first-child, .myContent ul li:first-child {
   border-top: none; }
@@ -268,9 +267,14 @@ img {
 .serviceContent ul li img, .myContent ul li img {
   width: 0.56rem; }
 
-.serviceContent ul li p, .myContent ul li p {
+.serviceContent ul li a, .myContent ul li a {
+  display: flex;
+  align-items: Center; }
+
+.serviceContent ul li a p, .myContent ul li a p {
   font-size: 0.34667rem;
-  margin-left: 0.26667rem; }
+  margin-left: 0.26667rem;
+  color: #313131; }
 
 .serviceContent ul li i, .myContent ul li i {
   width: 0.14667rem;
@@ -288,8 +292,8 @@ img {
   margin-top: 0.4rem; }
 
 .noticeLeft p {
-  width: 2.4rem;
-  height: 70px;
+  width: 2.4rem !important;
+  height: 0.93333rem;
   text-align: center;
   color: #0062b2;
   font-size: 0.34667rem; }
@@ -426,24 +430,36 @@ img {
 .homeNav {
   width: 100%;
   height: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #ffffff;
+  padding-bottom: 0.26667rem; }
 
 .homeNav ul {
   width: 9.29333rem;
   height: auto;
   overflow: hidden;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex; }
 
 .homeNav ul li {
-  float: left;
-  margin-left: 0.8rem;
+  flex: 1;
+  width: 2rem;
+  text-align: center;
   margin-top: 0.26667rem; }
 
-.homeNav ul li:first-child {
-  margin-left: 0.18667rem; }
+.homeNav ul li a {
+  display: block;
+  text-align: center; }
 
 .homeNav ul li img {
-  width: 1.14667rem; }
+  width: 1.14667rem;
+  display: inline !important; }
+
+.homeNav ul li a span {
+  margin-top: 0.13333rem;
+  color: #313131;
+  display: block;
+  font-size: 0.29333rem; }
 
 .homeList {
   width: 100%;
@@ -473,19 +489,19 @@ img {
 
 .con {
   width: 4.26667rem;
-  font-size: 0.26667rem;
+  font-size: 0.29333rem;
   color: #313131; }
 
 .company {
   width: 3.56rem;
   color: #8a8a8a;
-  font-size: 0.24rem;
+  font-size: 0.26667rem;
   margin-left: 0.34667rem; }
 
 .date {
   width: 0.73333rem;
   color: #8a8a8a;
-  font-size: 0.24rem;
+  font-size: 0.26667rem;
   margin-left: 0.34667rem; }
 
 .marginB30 {
@@ -506,9 +522,3 @@ img {
 
 .marginL27 {
   margin-left: 0.36rem !important; }
-
-.imgW108 {
-  width: 1.44rem !important; }
-
-.imgW153 {
-  width: 2.04rem !important; }
