@@ -219,25 +219,33 @@ img{
 }
 .commonBottom ul{
 	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: Center;
 }
 .commonBottom ul li{
 	width: ptor(44px);
-	text-align: center;
 	height: ptor(98px);
 	float: left;
 	margin-left: ptor(107px);
+	display: flex;
+	justify-content: center;
+	align-items: Center;
 }
 .commonBottom ul li:first-child{
 	margin-left: ptor(88px) !important;
 }
 .commonBottom ul li a{
-	display: block;
-	overflow: hidden;
-	bottom: ptor(14px);
-	position: absolute;
+    display: block;
+	text-align: center;
 }
 .commonBottom ul li a img{
 	width: ptor(44px);
+}
+.commonBottom ul li a span{
+	color: #313131;
+	font-size: ptor(20px);
+	margin-top: ptor(5px);
 }
 //bottom样式 end
 

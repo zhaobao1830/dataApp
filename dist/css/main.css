@@ -185,26 +185,34 @@ img {
   width: 1.06667rem; }
 
 .commonBottom ul {
-  float: left; }
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: Center; }
 
 .commonBottom ul li {
   width: 0.58667rem;
-  text-align: center;
   height: 1.30667rem;
   float: left;
-  margin-left: 1.42667rem; }
+  margin-left: 1.42667rem;
+  display: flex;
+  justify-content: center;
+  align-items: Center; }
 
 .commonBottom ul li:first-child {
   margin-left: 1.17333rem !important; }
 
 .commonBottom ul li a {
   display: block;
-  overflow: hidden;
-  bottom: 0.18667rem;
-  position: absolute; }
+  text-align: center; }
 
 .commonBottom ul li a img {
   width: 0.58667rem; }
+
+.commonBottom ul li a span {
+  color: #313131;
+  font-size: 0.26667rem;
+  margin-top: 0.06667rem; }
 
 .serviceBody, .myBody, .noticeShowBody, .homeBody {
   background-color: #f3f5f7; }
